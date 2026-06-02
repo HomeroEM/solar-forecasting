@@ -1,0 +1,15 @@
+# Entorno virtual
+venv/
+.venv/
+
+# Jupyter Notebooks internos
+.ipynb_checkpoints/
+
+# Datos (es mejor no subir data cruda muy pesada a GitHub)
+data/raw/*
+data/processed/*
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+access_token
