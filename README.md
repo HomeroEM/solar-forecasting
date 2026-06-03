@@ -7,7 +7,7 @@ Las plantas de energía solar fotovoltaica operan en un entorno altamente variab
 * **El Problema:** El operador del sistema eléctrico exige estimaciones precisas de la energía que se inyectará a la red al día siguiente. Las desviaciones (generar de más o de menos) se traducen en **penalizaciones financieras** significativas y fallas de eficiencia operativa.
 * **El Objetivo:** Desarrollar un pipeline de análisis de datos para identificar anomalías en los inversores de la planta, entender los factores físicos de eficiencia y construir un modelo analítico base (*Baseline*) para predecir la generación de potencia AC.
 
-## 🛠️ 2. Stack Tecnológico
+##  2. Stack Tecnológico
 * **Lenguaje:** Python 3.10
 * **Entorno de Desarrollo:** VS Code / Jupyter Notebooks
 * **Librerías Clave:** * Manipulación de datos: `Pandas`, `NumPy`
@@ -17,7 +17,7 @@ Las plantas de energía solar fotovoltaica operan en un entorno altamente variab
 
 ---
 
-## 📁 3. Estructura del Repositorio
+## 3. Estructura del Repositorio
 ```text
 proyecto-solar-forecasting/
 │
