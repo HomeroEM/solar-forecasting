@@ -15,29 +15,10 @@ Las plantas de energía solar fotovoltaica operan en un entorno altamente variab
   * Modelamiento: `Scikit-Learn`
 * **Metodología de Desarrollo:** Modular (Estructura de código reproducible con `/notebooks` y `/src`).
 
----
-
-## 3. Estructura del Repositorio
-```text
-proyecto-solar-forecasting/
-│
-├── data/
-│   ├── raw/                # Datos originales sin modificaciones (Sensores e Inversores)
-│   └── processed/          # Datos limpios con fechas indexadas y variables imputadas
-│
-├── notebooks/
-│   ├── 1_data_cleaning.ipynb      # Extracción, tratamiento de nulos y tipado
-│   ├── 2_exploratory_analysis.ipynb # Análisis de curvas de generación y correlaciones
-│   └── 3_forecasting.ipynb        # Modelamiento predictivo y cálculo de errores (MAE)
-│
-├── src/
-│   ├── __init__.py
-│   └── utils.py            # Funciones auxiliares reutilizables
-│
-├── .gitignore              # Control de archivos excluidos de Git
-├── README.md               # Documentación principal del proyecto
-└── requirements.txt        # Dependencias del entorno
-```
-
+## 3. Metodologia y ciclo del proyecto
+Paso 1: Ingesta y Limpieza de Datos (`1_data_cleaning.ipynb`)
+* Se estandarizaron los registros temporales de la Planta 2 transformando la variable `DATE_TIME` al formato nativo de series de tiempo (`datetime64`).
+* Se verificó la integridad de los datos eliminando registros duplicados y aplicando técnicas de interpolación para mitigar la pérdida de lecturas de los sensores climáticos.
+* Se consolidaron las métricas de inversores y telemetría ambiental mediante un proceso de *Merge* estructurado, generando un dataset unificado listo para la fase exploratoria.
 ---
 datos de keggle  "anikannal/solar-power-generation-data"
